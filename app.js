@@ -11,6 +11,11 @@ var movies = [
     name:"Love story",
     id:2,
     genre:"romantic"
+  },
+  {
+    name:"Fast and furrious",
+    id:3,
+    genre:"action"
   }
 ];
 
