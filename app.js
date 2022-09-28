@@ -30,7 +30,7 @@ app.post("/", (req, res) => {
   };
   movies.push(movie);
   res.send(movie);
-  console.log(movies);
+ 
 });
 app.get("/:id", (req, res) => {
   const movie = movies.find((movie) => movie.id === parseInt(req.params.id));
