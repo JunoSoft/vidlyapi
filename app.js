@@ -7,6 +7,11 @@ var movies = [
     id: 1,
     genre: "action",
   },
+  {
+    name:"Love story",
+    id:2,
+    genre:"romantic"
+  }
 ];
 
 app.get("/", (req, res) => {
