@@ -25,7 +25,7 @@ app.post("/", (req, res) => {
 app.get("/:id", (req, res) => {
   const movie = movies.find((movie) => movie.id === parseInt(req.params.id));
 
-  if (!movie) return res.status(404).send("Movie doesn't exist");
+  if (!movie) return res.status(404).send("Movie doesn't exist!");
   res.send(movie);
 });
 app.put("/:id",(req,res)=>{
