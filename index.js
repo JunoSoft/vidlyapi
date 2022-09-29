@@ -9,7 +9,14 @@ const mongoSchema = new mongoose.Schema({
 });
 const Person = mongoose.model("Person", mongoSchema);
 async function displayPersons() {
-const result = await Person.find({name:"DIDIER"});
-console.log(result)
+return  await Person
+.find()
+.or([{name:"UBANJE"},{age:{$lte:10}}])
+.select("name")
+
 }
-displayPersons();
+async function run(){
+  const persons = await displayPersons();
+  console.log(persons)
+}
+run();
