@@ -9,7 +9,7 @@ const mongoSchema = new mongoose.Schema({
 });
 const Person = mongoose.model("Person", mongoSchema);
 async function displayPersons() {
-const result = await Person.find({});
+const result = await Person.find({name:"DIDIER"});
 console.log(result)
 }
 displayPersons();
